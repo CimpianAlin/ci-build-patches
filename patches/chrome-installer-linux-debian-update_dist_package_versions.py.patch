@@ -1,0 +1,28 @@
+diff --git a/chrome/installer/linux/debian/update_dist_package_versions.py b/chrome/installer/linux/debian/update_dist_package_versions.py
+index a3d824eeabbc..3360442a7e0d 100755
+--- a/chrome/installer/linux/debian/update_dist_package_versions.py
++++ b/chrome/installer/linux/debian/update_dist_package_versions.py
+@@ -24,7 +24,6 @@ SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
+ SUPPORTED_DEBIAN_RELEASES = {
+     'Debian 8 (Jessie)': 'jessie',
+     'Debian 9 (Stretch)': 'stretch',
+-    'Debian 10 (Buster)': 'buster',
+ }
+ 
+ SUPPORTED_UBUNTU_RELEASES = {
+@@ -40,6 +39,7 @@ PACKAGE_FILTER = set([
+     "libatk-bridge2.0-0",
+     "libc6",
+     "libcairo2",
++    "libcairo-gobject2",
+     "libcups2",
+     "libdbus-1-3",
+     "libexpat1",
+@@ -66,6 +66,7 @@ PACKAGE_FILTER = set([
+     "libxrender1",
+     "libxss1",
+     "libxtst6",
++    "zlib1g",
+ ])
+ 
+ def create_temp_file_from_data(data):
