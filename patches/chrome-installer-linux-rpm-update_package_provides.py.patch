@@ -1,5 +1,5 @@
---- update_package_provides.py	2018-08-14 15:39:47.098846999 +0000
-+++ update_package_provides.py	2018-08-14 15:38:35.770846999 +0000
+--- chrome/installer/linux/rpm/update_package_provides.py	2018-08-14 15:39:47.098846999 +0000
++++ chrome/installer/linux/rpm/update_package_provides.py	2018-08-14 15:38:35.770846999 +0000
 @@ -86,6 +86,14 @@
          # overwrite the originals.
          "https://download.opensuse.org/update/leap/%s/oss/" % version,
