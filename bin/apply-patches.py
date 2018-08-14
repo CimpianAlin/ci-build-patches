@@ -8,7 +8,7 @@ import sys
 SOURCE_ROOT = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 PATCHES_DIR = os.path.join(SOURCE_ROOT, 'patches')
 VENDOR_DIR = os.path.join(SOURCE_ROOT, '..', 'brave', 'vendor')
-SRC_DIR = os.path.join(SOURCE_ROOT, '..', '..')
+SRC_DIR = os.path.join(SOURCE_ROOT, '..', '..', 'src')
 PATCH_PY = os.path.join(VENDOR_DIR, 'python-patch', 'patch.py')
 
 

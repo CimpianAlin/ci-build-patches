@@ -1,33 +1,8 @@
 diff --git a/chrome/installer/linux/rpm/update_package_provides.py b/chrome/installer/linux/rpm/update_package_provides.py
-index 7842464740a9..65ce0e3b320a 100755
+index 7842464740a9ead296207218db64d5be9f0401fc..edb3026f3b10d1113f4b12b119dddf038e313ebb 100755
 --- a/chrome/installer/linux/rpm/update_package_provides.py
 +++ b/chrome/installer/linux/rpm/update_package_provides.py
-@@ -32,6 +32,7 @@ PACKAGE_FILTER = [
-     "libatk-bridge-2.0.so",
-     "libc.so",
-     "libcairo.so",
-+    "libcairo-gobject.so.2",
-     "libcups.so",
-     "libdbus-1.so",
-     "libdl.so",
-@@ -50,12 +51,16 @@ PACKAGE_FILTER = [
-     "libnssutil3.so",
-     "libpango-1.0.so",
-     "libpangocairo-1.0.so",
-+    "libplc4.so",
-+    "libplds4.so",
-     "libpthread.so",
-+    "libresolv.so.2",
-     "librt.so",
-     "libsmime3.so",
-     "libstdc++.so",
-     "libuuid.so",
-     "libxcb.so",
-+    "libz.so.1",
-     "rtld(GNU_HASH)",
- ]
- 
-@@ -81,6 +86,14 @@ for version in SUPPORTED_OPENSUSE_LEAP_RELEASES:
+@@ -81,6 +81,14 @@ for version in SUPPORTED_OPENSUSE_LEAP_RELEASES:
          # overwrite the originals.
          "https://download.opensuse.org/update/leap/%s/oss/" % version,
    ]

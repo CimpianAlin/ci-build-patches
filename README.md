@@ -8,6 +8,12 @@ to make minor changes to jobs.
 
 This is modeled after the brave-browser and brave-core patch process.
 
+## Producing diffs
+
+To create the patches, use the `--full-index` argument to `git diff`. Our patches are applied after the
+brave-core patches so must be created after those have been applied. If you have the same content in these
+patches as brave-core, they will fail to apply cleanly.
+
 TODO:
 
 * differentiate patches between platforms (win/osx/linux)
