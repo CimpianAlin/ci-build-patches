@@ -1,0 +1,11 @@
+--- brave/app/win/BUILD.gn	2018-08-21 15:09:56.580896988 -0700
++++ brave/app/win/BUILD.gn	2018-08-21 15:09:28.571965149 -0700
+@@ -10,7 +10,7 @@
+ 
+   args = [
+     "--symbols-dir=" + rebase_path(symbols_dir),
+-    "--jobs=16",
++    "--jobs=16", "--verbose",
+     "--build-dir=" + rebase_path(root_out_dir),
+     rebase_path(root_out_dir)
+   ]
